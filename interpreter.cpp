@@ -39,12 +39,12 @@ int main(){
             memory[idx]--;
             break;
 
-        case '.':
+        case ',':
             memory[idx] = input[input_idx];
             input_idx++;
             break;
 
-        case ',':
+        case '.':
             putchar(memory[idx]);
             break;
 
