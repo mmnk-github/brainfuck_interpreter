@@ -40,12 +40,12 @@ int main(){
             memory[ptr]--;
             break;
 
-        case '.':
+        case ',':
             memory[ptr] = input[input_ptr];
             input_ptr++;
             break;
 
-        case ',':
+        case '.':
             putchar(memory[ptr]);
             break;
 
