@@ -63,7 +63,7 @@ int main(){
                     }
                     code_ptr++;
                     if(code_ptr >= code.length()){
-                        cout << endl << "syntax error: '[' に対応する ']' がないよ。" << endl;
+                        cout << endl << "syntax error: ']' corresponding to '[' was not found. Check the correspondence between '[' and ']'." << endl;
                         return 0;
                     }
                 }
@@ -83,7 +83,8 @@ int main(){
                 }
                 code_ptr--;
                 if(code_ptr < 0){
-                    cout << endl << "syntax error: ']' に対応する '[' がないよ。" << endl;
+                    cout << endl << "syntax error: '[' corresponding to ']' was not found. Check the correspondence between '[' and ']'." << endl;
+                    return 0;
                 }
             }
             code_ptr--;
