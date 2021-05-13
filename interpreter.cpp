@@ -62,6 +62,10 @@ int main(){
                         }
                     }
                     code_ptr++;
+                    if(code_ptr >= code.length()){
+                        cout << endl << "syntax error: '[' に対応する ']' がないよ。" << endl;
+                        return 0;
+                    }
                 }
             }
             break;
@@ -78,6 +82,9 @@ int main(){
                     }
                 }
                 code_ptr--;
+                if(code_ptr < 0){
+                    cout << endl << "syntax error: ']' に対応する '[' がないよ。" << endl;
+                }
             }
             code_ptr--;
             break;
